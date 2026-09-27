@@ -8,7 +8,7 @@
 <style>*{box-sizing:border-box;margin:0;padding:0}
 :root{--blue:#1a73e8;--blue-d:#0f5fd0;--dark:#0b1b33;--ink:#1e2c3f;--mut:#5b6b7f;--bg:#f3f6fc;--card:#ffffff;--line:#e2e9f5;--r:16px}
 html{scroll-behavior:smooth}
-body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.65;font-size:16px}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.65;font-size:16px;overflow-x:clip;overflow-wrap:break-word}
 img{max-width:100%}
 a{text-decoration:none;color:inherit}
 .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
@@ -50,6 +50,8 @@ a{text-decoration:none;color:inherit}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.grid2>*,.grid3>*,.grid4>*,.grid5>*{min-width:0}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:0 4px 18px rgba(11,27,51,.05);transition:.2s}
 .card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(26,115,232,.12)}
 .card h3{font-size:1.12rem;color:var(--dark);margin:12px 0 8px}
@@ -137,6 +139,7 @@ textarea.in{min-height:120px;resize:vertical}
 .hero-grid,.two{grid-template-columns:1fr}
 .grid3{grid-template-columns:1fr 1fr}
 .grid4{grid-template-columns:1fr 1fr}
+.grid5{grid-template-columns:repeat(3,1fr)}
 .stats{grid-template-columns:1fr 1fr}
 .stat:nth-child(3){border-left:none}
 .ftr-grid{grid-template-columns:1fr 1fr}
@@ -146,7 +149,7 @@ textarea.in{min-height:120px;resize:vertical}
 .hero h1{font-size:2rem}
 .cta{padding:36px 26px}
 }
-@media(max-width:560px){.grid3,.grid4,.grid2{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-left:none;border-top:1px solid var(--line)}.stat:first-child{border-top:none}.ftr-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.grid3,.grid4,.grid5,.grid2{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-left:none;border-top:1px solid var(--line)}.stat:first-child{border-top:none}.ftr-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -257,7 +260,7 @@ textarea.in{min-height:120px;resize:vertical}
 <span class="kicker">How I Work</span>
 <h2>My Process</h2>
 <p class="sub">A simple, proven process that gets your project done right — on time.</p>
-<div class="grid4" style="grid-template-columns:repeat(5,1fr)">
+<div class="grid5">
 <div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">🔍</div><h3>1. Discover</h3><p>Understanding your business &amp; goals</p></div>
 <div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">📋</div><h3>2. Plan</h3><p>Strategy &amp; design blueprint</p></div>
 <div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">🛠️</div><h3>3. Build</h3><p>Development with regular updates</p></div>

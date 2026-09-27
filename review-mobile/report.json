@@ -1,0 +1,32 @@
+{
+ "home": {
+  "vw": 390,
+  "scrollW": 390,
+  "bad": []
+ },
+ "about": {
+  "vw": 390,
+  "scrollW": 390,
+  "bad": []
+ },
+ "services": {
+  "vw": 390,
+  "scrollW": 390,
+  "bad": []
+ },
+ "projects": {
+  "vw": 390,
+  "scrollW": 390,
+  "bad": []
+ },
+ "skills": {
+  "vw": 390,
+  "scrollW": 390,
+  "bad": []
+ },
+ "contact": {
+  "vw": 390,
+  "scrollW": 390,
+  "bad": []
+ }
+}
