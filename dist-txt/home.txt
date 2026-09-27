@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home — Asad Bukhari | WordPress Developer & AI Automation Specialist</title>
+<meta name="description" content="Asad Bukhari — WordPress Developer & AI Automation Specialist in Lahore, Pakistan. Modern websites, AI automation, SEO and digital marketing for businesses.">
+<style>*{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#1a73e8;--blue-d:#0f5fd0;--dark:#0b1b33;--ink:#1e2c3f;--mut:#5b6b7f;--bg:#f3f6fc;--card:#ffffff;--line:#e2e9f5;--r:16px}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.65;font-size:16px}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand b{font-size:1.15rem;letter-spacing:.06em;color:var(--dark)}
+.brand span{display:block;font-size:.72rem;color:var(--mut);letter-spacing:.02em}
+.nav{display:flex;gap:26px;align-items:center}
+.nav a{font-size:.95rem;color:var(--ink);font-weight:500;padding:6px 2px;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--blue)}
+.nav a.on{color:var(--blue);border-color:var(--blue)}
+.btn{display:inline-block;background:var(--blue);color:#fff!important;padding:11px 26px;border-radius:9px;font-weight:600;font-size:.95rem;border:none;cursor:pointer;transition:.2s}
+.btn:hover{background:var(--blue-d);transform:translateY(-1px)}
+.btn.ghost{background:#fff;color:var(--blue)!important;border:1.5px solid var(--blue)}
+.btn.ghost:hover{background:#eaf2fe}
+.btn.light{background:#fff;color:var(--blue-d)!important}
+.menu-btn{display:none;background:none;border:none;font-size:1.6rem;cursor:pointer;color:var(--dark)}
+/* hero */
+.hero{background:linear-gradient(180deg,#f7faff 0%,#fff 100%);padding:64px 0 56px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.pill{display:inline-block;background:#e8f3ff;color:var(--blue-d);font-size:.75rem;font-weight:700;letter-spacing:.08em;padding:7px 14px;border-radius:20px;margin-bottom:16px}
+.hero h1{font-size:2.7rem;line-height:1.18;color:var(--dark);margin-bottom:14px}
+.hero h1 .hl{color:var(--blue)}
+.lead{color:var(--mut);font-size:1.05rem;margin-bottom:24px;max-width:34rem}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.ticks{display:flex;gap:22px;flex-wrap:wrap;font-size:.9rem;color:var(--mut)}
+.ticks i{color:var(--blue);font-style:normal;margin-right:6px}
+.hero-photo{display:flex;justify-content:center}
+.hero-photo img{width:min(340px,80%);aspect-ratio:4/4.6;object-fit:cover;object-position:top;border-radius:22px;box-shadow:0 24px 60px rgba(26,115,232,.18);border:6px solid #fff}
+/* sections */
+.sec{padding:64px 0}
+.sec.alt{background:var(--bg)}
+.kicker{color:var(--blue);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.sec h2{font-size:2rem;color:var(--dark);margin:8px 0 10px}
+.sec .sub{color:var(--mut);max-width:44rem;margin-bottom:34px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:0 4px 18px rgba(11,27,51,.05);transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(26,115,232,.12)}
+.card h3{font-size:1.12rem;color:var(--dark);margin:12px 0 8px}
+.card p{font-size:.93rem;color:var(--mut)}
+.ic{width:52px;height:52px;border-radius:14px;background:#e8f3ff;color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+ul.check{list-style:none;margin-top:12px}
+ul.check li{font-size:.9rem;color:var(--mut);padding:5px 0 5px 28px;position:relative}
+ul.check li::before{content:"✓";position:absolute;left:4px;color:var(--blue);font-weight:800}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:-8px}
+.stat{padding:26px 20px;text-align:left;border-left:1px solid var(--line)}
+.stat:first-child{border-left:none}
+.stat b{display:block;font-size:1.05rem;color:var(--dark)}
+.stat span{font-size:.85rem;color:var(--mut)}
+/* projects */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.filters button{padding:9px 20px;border-radius:20px;border:1.5px solid var(--line);background:#fff;font-size:.88rem;cursor:pointer;color:var(--ink)}
+.filters button.on{background:var(--blue);color:#fff;border-color:var(--blue);font-weight:600}
+.proj{display:flex;flex-direction:column;overflow:hidden;padding:0}
+.proj-top{height:150px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#fff;position:relative}
+.proj-top .t{font-size:1.25rem;font-weight:800;letter-spacing:.02em;text-align:center;padding:0 16px}
+.proj-top .d{font-size:.75rem;opacity:.85;letter-spacing:.1em;text-transform:uppercase}
+.proj-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.proj-body h3{margin:0 0 2px}
+.proj-cat{font-size:.8rem;color:var(--blue);font-weight:600;margin-bottom:8px}
+.proj-body p{font-size:.88rem;color:var(--mut);flex:1}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.tags span{background:#eaf2fe;color:var(--blue-d);font-size:.75rem;font-weight:600;padding:4px 12px;border-radius:14px}
+.vp{color:var(--blue);font-weight:600;font-size:.92rem}
+.vp:hover{text-decoration:underline}
+/* skill bars */
+.bar-row{margin-bottom:16px}
+.bar-row .t{display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:6px;color:var(--ink)}
+.bar{height:8px;background:#e6edf7;border-radius:5px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),#5aa0ff);border-radius:5px}
+/* timeline */
+.tl{position:relative;margin-top:10px;padding-left:28px}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl-item{position:relative;padding:0 0 26px}
+.tl-item::before{content:"";position:absolute;left:-26px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--blue);border:3px solid #d6e7ff}
+.tl-item b{color:var(--dark)}
+.tl-item .yr{font-size:.8rem;color:var(--blue);font-weight:700}
+/* forms */
+.fcard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px}
+label.fl{display:block;font-size:.85rem;font-weight:600;color:var(--dark);margin:14px 0 6px}
+.in,select.in,textarea.in{width:100%;padding:11px 14px;border:1.5px solid var(--line);border-radius:9px;font-size:.95rem;font-family:inherit;outline:none;background:#fff}
+.in:focus{border-color:var(--blue)}
+textarea.in{min-height:120px;resize:vertical}
+.cinfo{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px}
+.cinfo .ic{width:46px;height:46px;font-size:1.25rem;flex-shrink:0}
+.cinfo b{color:var(--dark);font-size:.95rem}
+.cinfo a.val{color:var(--blue);font-size:.9rem;word-break:break-all}
+.cinfo p{font-size:.82rem;color:var(--mut)}
+/* faq */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:4px 18px}
+.faq summary{cursor:pointer;font-weight:600;color:var(--dark);padding:12px 0;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--blue);font-weight:800}
+.faq details[open] summary::after{content:"–"}
+.faq p{font-size:.9rem;color:var(--mut);padding:0 0 14px}
+/* cta */
+.cta{background:linear-gradient(135deg,#0b1b33,#14315e);border-radius:22px;padding:52px 44px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;margin:20px 0 0}
+.cta h2{color:#fff;margin:6px 0 8px}
+.cta p{opacity:.8;max-width:34rem}
+.cta .row{display:flex;gap:12px;flex-wrap:wrap}
+/* footer */
+.ftr{background:var(--dark);color:#c6d3e6;padding:56px 0 0;margin-top:0}
+.ftr-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:32px;padding-bottom:36px}
+.ftr h4{color:#fff;font-size:1rem;margin-bottom:14px}
+.ftr .brand b{color:#fff}
+.ftr p,.ftr a{font-size:.88rem;color:#9fb0c9}
+.ftr a:hover{color:#fff}
+.ftr ul{list-style:none}
+.ftr li{margin-bottom:8px}
+.soc{display:flex;gap:10px;margin-top:14px}
+.soc a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:1rem}
+.soc a:hover{background:var(--blue)}
+.ftr-bot{border-top:1px solid rgba(255,255,255,.1);padding:18px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.82rem;color:#8a9bb5}
+/* misc */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.quote{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;padding:20px 22px;font-style:italic;color:var(--mut);margin-top:18px}
+.sig{font-family:cursive;font-size:1.6rem;color:var(--dark);margin-top:10px}
+.note{background:#fff8e6;border:1px solid #f0dfa8;border-radius:10px;padding:14px 18px;font-size:.88rem;color:#7c5e10;margin-top:16px}
+@media(max-width:900px){
+.hero-grid,.two{grid-template-columns:1fr}
+.grid3{grid-template-columns:1fr 1fr}
+.grid4{grid-template-columns:1fr 1fr}
+.stats{grid-template-columns:1fr 1fr}
+.stat:nth-child(3){border-left:none}
+.ftr-grid{grid-template-columns:1fr 1fr}
+.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:16px 24px;gap:6px;border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.nav.open{display:flex}
+.menu-btn{display:block}
+.hero h1{font-size:2rem}
+.cta{padding:36px 26px}
+}
+@media(max-width:560px){.grid3,.grid4,.grid2{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{border-left:none;border-top:1px solid var(--line)}.stat:first-child{border-top:none}.ftr-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hdr">
+<div class="wrap hdr-in">
+<div class="brand"><a href="/"><b>ASAD BUKHARI</b><span>WordPress • AI • Automation</span></a></div>
+<nav class="nav" id="nav">
+<a href="/" data-p="home">Home</a>
+<a href="/about/" data-p="about">About</a>
+<a href="/services/" data-p="services">Services</a>
+<a href="/projects/" data-p="projects">Projects</a>
+<a href="/skills/" data-p="skills">Skills</a>
+<a href="/contact/" data-p="contact">Contact</a>
+<a href="/contact/" class="btn" style="padding:9px 22px">Let's Talk</a>
+</nav>
+<button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+</div>
+</header>
+
+<main><section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="pill">● AVAILABLE FOR FREELANCE PROJECTS</span>
+<h1>WordPress Developer &amp; <span class="hl">AI Automation</span> Specialist</h1>
+<p class="lead">I help businesses grow with modern WordPress websites, smart AI automation, and digital marketing that actually brings customers. From idea to launch — and beyond.</p>
+<div class="hero-cta">
+<a href="/projects/" class="btn">View My Work →</a>
+<a href="/contact/" class="btn ghost">Let's Work Together</a>
+</div>
+<div class="ticks"><span><i>✓</i> Responsive Design</span><span><i>✓</i> SEO-Friendly</span><span><i>✓</i> Business-Focused</span></div>
+</div>
+<div class="hero-photo"><img src="https://pink-mongoose-881311.hostingersite.com/wp-content/uploads/2026/09/asad-bukhari-photo.jpg" alt="Asad Bukhari"></div>
+</div>
+</section>
+
+<section class="sec" style="padding-top:36px">
+<div class="wrap">
+<div class="stats">
+<div class="stat"><b>🎓 BS IT Graduate</b><span>University of Education Lahore</span></div>
+<div class="stat"><b>💻 WordPress</b><span>Modern business websites</span></div>
+<div class="stat"><b>🤖 AI &amp; Python</b><span>ML &amp; smart automation</span></div>
+<div class="stat"><b>📈 SEO &amp; Marketing</b><span>Growth that converts</span></div>
+</div>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="wrap">
+<span class="kicker">About Me</span>
+<h2>Technology, Creativity &amp; Business — Combined.</h2>
+<p class="sub">I'm a developer who understands business. My websites don't just look good — they bring customers, save time through automation, and grow with your business.</p>
+<div class="grid3">
+<div class="card"><div class="ic">💻</div><h3>Web Development</h3><p>Modern, fast, and mobile-friendly websites built with WordPress — from business sites to online tools.</p></div>
+<div class="card"><div class="ic">🤖</div><h3>AI &amp; Automation</h3><p>From machine learning projects to n8n workflows that save hours of manual work every week.</p></div>
+<div class="card"><div class="ic">📈</div><h3>Digital Growth</h3><p>SEO and digital marketing strategies that help businesses get found and grow online.</p></div>
+</div>
+<div style="text-align:center;margin-top:30px"><a href="/about/" class="btn ghost">More About Me →</a></div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap">
+<span class="kicker">What I Do</span>
+<h2>Services That Solve Real Problems</h2>
+<p class="sub">Every service is designed with one goal: helping your business succeed online.</p>
+<div class="grid3">
+<div class="card"><div class="ic">💻</div><h3>WordPress Development</h3><p>Custom, fast, and secure WordPress websites tailored to your business needs.</p><p style="margin-top:10px"><a class="vp" href="/services/">Learn More →</a></p></div>
+<div class="card"><div class="ic">🎨</div><h3>Website Design</h3><p>Beautiful, modern designs that build trust and turn visitors into customers.</p><p style="margin-top:10px"><a class="vp" href="/services/">Learn More →</a></p></div>
+<div class="card"><div class="ic">🔍</div><h3>SEO</h3><p>Get found on Google. Proven SEO strategies that bring organic traffic and leads.</p><p style="margin-top:10px"><a class="vp" href="/services/">Learn More →</a></p></div>
+<div class="card"><div class="ic">📣</div><h3>Digital Marketing</h3><p>Social media and ad campaigns that reach the right audience and drive sales.</p><p style="margin-top:10px"><a class="vp" href="/services/">Learn More →</a></p></div>
+<div class="card"><div class="ic">⚙️</div><h3>AI Automation</h3><p>n8n workflows and AI assistants that automate repetitive tasks and save time.</p><p style="margin-top:10px"><a class="vp" href="/services/">Learn More →</a></p></div>
+<div class="card"><div class="ic">🐍</div><h3>Python &amp; ML</h3><p>Custom Python applications and machine learning solutions for real-world problems.</p><p style="margin-top:10px"><a class="vp" href="/services/">Learn More →</a></p></div>
+</div>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="wrap">
+<span class="kicker">Portfolio</span>
+<h2>Selected Work</h2>
+<p class="sub">A few projects I'm proud of — each one solved a real problem for a real business.</p>
+<div class="grid3">
+<div class="card proj" data-cat="wordpress"><div class="proj-top" style="background:linear-gradient(135deg,#2e7d32,#66bb6a)"><div class="t">Mihirath Landscape</div><div class="d">WordPress Website</div></div><div class="proj-body"><p class="proj-cat">WordPress</p><p>Professional landscaping company website with service showcase and WhatsApp booking.</p><div class="tags"><span>WordPress</span><span>Elementor</span></div><a class="vp" href="https://mihrathlandscape.com" target="_blank" rel="noopener">Visit Site →</a></div></div>
+<div class="card proj" data-cat="ai"><div class="proj-top" style="background:linear-gradient(135deg,#5c6bc0,#9fa8da)"><div class="t">Leaf Disease Detection</div><div class="d">AI / Machine Learning</div></div><div class="proj-body"><p class="proj-cat">AI / Machine Learning</p><p>Deep learning model that detects plant leaf diseases from photos using TensorFlow &amp; OpenCV.</p><div class="tags"><span>TensorFlow</span><span>OpenCV</span><span>Python</span></div><a class="vp" href="/projects/">View Details →</a></div></div>
+<div class="card proj" data-cat="webapp"><div class="proj-top" style="background:linear-gradient(135deg,#00897b,#4db6ac)"><div class="t">Asaan Hisaab</div><div class="d">Web Application</div></div><div class="proj-body"><p class="proj-cat">Web Application</p><p>Free online calculators &amp; tools for Pakistan — Zakat, salary tax, BMI, EMI and 6 more tools.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="vp" href="https://github.com/Asadshah-coder/asaan-hisaab" target="_blank" rel="noopener">View on GitHub →</a></div></div>
+</div>
+<div style="text-align:center;margin-top:30px"><a href="/projects/" class="btn">View All Projects</a></div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap">
+<span class="kicker">Skills</span>
+<h2>My Technical Toolkit</h2>
+<p class="sub">The tools and technologies I use to build solutions.</p>
+<div class="grid4">
+<div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">💻</div><h3>WordPress</h3><p>Elementor, Astra, WooCommerce</p></div>
+<div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">🤖</div><h3>AI &amp; ML</h3><p>Python, TensorFlow, OpenCV</p></div>
+<div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">⚙️</div><h3>Automation</h3><p>n8n, RAG, Chatbots</p></div>
+<div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">📈</div><h3>Marketing</h3><p>SEO, Google Ads, Social Media</p></div>
+</div>
+<div style="text-align:center;margin-top:30px"><a href="/skills/" class="btn ghost">View All Skills →</a></div>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="wrap">
+<span class="kicker">How I Work</span>
+<h2>My Process</h2>
+<p class="sub">A simple, proven process that gets your project done right — on time.</p>
+<div class="grid4" style="grid-template-columns:repeat(5,1fr)">
+<div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">🔍</div><h3>1. Discover</h3><p>Understanding your business &amp; goals</p></div>
+<div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">📋</div><h3>2. Plan</h3><p>Strategy &amp; design blueprint</p></div>
+<div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">🛠️</div><h3>3. Build</h3><p>Development with regular updates</p></div>
+<div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">⚡</div><h3>4. Optimize</h3><p>Testing, SEO &amp; performance</p></div>
+<div class="card" style="text-align:center"><div class="ic" style="margin:0 auto">🚀</div><h3>5. Launch</h3><p>Go live &amp; ongoing support</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap">
+<div class="cta">
+<div><span class="kicker" style="color:#9fc1ff">Let's Work Together</span><h2>Have a Project in Mind?</h2><p>Whether you need a new website, want to automate your business, or grow your online presence — let's talk about how I can help.</p></div>
+<div class="row"><a href="/contact/" class="btn light">Start a Project →</a><a href="/projects/" class="btn" style="background:transparent;border:1.5px solid #fff">See My Work</a></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="ftr">
+<div class="wrap">
+<div class="ftr-grid">
+<div>
+<div class="brand"><b>ASAD BUKHARI</b><span>WordPress • AI • Automation</span></div>
+<p style="margin-top:12px">WordPress developer & AI automation specialist helping businesses grow with modern websites, smart automation, and digital marketing.</p>
+<div class="soc">
+<a href="https://www.linkedin.com/in/muhammad-asad-bukhari-59b3493aa/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+<a href="https://github.com/Asadshah-coder" target="_blank" rel="noopener" title="GitHub">⌨</a>
+<a href="https://wa.me/923461470660" target="_blank" rel="noopener" title="WhatsApp">✆</a>
+<a href="mailto:asad.aiworks@gmail.com" title="Email">✉</a>
+</div>
+</div>
+<div>
+<h4>Quick Links</h4>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/services/">Services</a></li>
+<li><a href="/projects/">Projects</a></li>
+<li><a href="/skills/">Skills</a></li>
+<li><a href="/contact/">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4>Services</h4>
+<ul>
+<li><a href="/services/">WordPress Development</a></li>
+<li><a href="/services/">Website Design</a></li>
+<li><a href="/services/">SEO & Digital Marketing</a></li>
+<li><a href="/services/">AI Automation</a></li>
+<li><a href="/services/">Python & Machine Learning</a></li>
+</ul>
+</div>
+<div>
+<h4>Contact Info</h4>
+<ul>
+<li>📍 Lahore, Pakistan</li>
+<li>✉ <a href="mailto:asad.aiworks@gmail.com">asad.aiworks@gmail.com</a></li>
+<li>✆ <a href="https://wa.me/923461470660">0346 147 0660</a></li>
+<li>🕒 Available for freelance projects</li>
+</ul>
+</div>
+</div>
+<div class="ftr-bot">
+<span>© 2026 Asad Bukhari. All Rights Reserved.</span>
+<span>Turning Ideas into Real Solutions ⚡</span>
+</div>
+</div>
+</footer>
+<script>
+document.querySelectorAll('.nav a[data-p]').forEach(function(a){if(a.dataset.p==='home')a.classList.add('on')});
+function filterProj(cat,btn){document.querySelectorAll('.filters button').forEach(function(b){b.classList.remove('on')});btn.classList.add('on');document.querySelectorAll('.proj').forEach(function(p){p.style.display=(cat==='all'||p.dataset.cat===cat)?'':'none'})}
+function waSend(e){e.preventDefault();var f=e.target;var msg='New project inquiry%0A%0AName: '+encodeURIComponent(f.name.value)+'%0AEmail: '+encodeURIComponent(f.email.value)+'%0AProject Type: '+encodeURIComponent(f.ptype.value)+'%0ABudget: '+encodeURIComponent(f.budget.value)+'%0A%0ADetails:%0A'+encodeURIComponent(f.details.value);window.open('https://wa.me/923461470660?text='+msg,'_blank');return false}
+</script>
+
+</body>
+</html>
