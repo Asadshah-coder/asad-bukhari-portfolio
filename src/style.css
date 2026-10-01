@@ -150,3 +150,8 @@ textarea.in{min-height:120px;resize:vertical}
 .proj-top.shot .shade{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(4,12,28,.82));color:#fff;text-align:left}
 .proj-top.shot .t{font-size:1.12rem;font-weight:800;letter-spacing:.02em}
 .proj-top.shot .d{font-size:.7rem;opacity:.9;letter-spacing:.12em;text-transform:uppercase;margin-top:4px}
+/* Floating WhatsApp button */
+.wa-float{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(37,211,102,.45);z-index:9999;transition:transform .2s ease}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@media(max-width:640px){.wa-float{right:14px;bottom:14px;width:52px;height:52px}.wa-float svg{width:28px;height:28px}}
