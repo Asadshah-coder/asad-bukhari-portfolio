@@ -13,6 +13,7 @@ PAGES = {
     "projects": "Projects — Asad Bukhari",
     "skills": "Skills — Asad Bukhari",
     "contact": "Contact — Asad Bukhari",
+    "privacy": "Privacy Policy — Asad Bukhari",
 }
 
 css = (SRC / "style.css").read_text()

@@ -162,6 +162,13 @@ textarea.in{min-height:120px;resize:vertical}
 .wa-float:hover{transform:scale(1.08)}
 .wa-float svg{width:30px;height:30px;fill:#fff}
 @media(max-width:640px){.wa-float{right:14px;bottom:14px;width:52px;height:52px}.wa-float svg{width:28px;height:28px}}
+/* Proficiency levels (replaces self-assessed % bars) */
+.lvl-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.lvl-row:last-of-type{border-bottom:none}
+.lvl{font-size:.7rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:4px 12px;border-radius:999px;white-space:nowrap}
+.lvl.adv{background:#e2f4e8;color:#12713a}
+.lvl.pro{background:#e7edfb;color:#2b4acb}
+.lvl.int{background:#fdf1dd;color:#96690f}
 </style>
 </head>
 <body>
@@ -236,6 +243,78 @@ textarea.in{min-height:120px;resize:vertical}
 <details><summary>Why hire a WordPress developer in Lahore?</summary><p>You get international-quality websites and automation at honest rates, in your own timezone, with clear communication. No agency overhead — you work directly with the developer building your project.</p></details>
 <details><summary>What happens after I send a message?</summary><p>I reply within 24 hours — usually much faster on WhatsApp. We'll discuss your goals, I'll ask a few questions about your project, then you'll get a clear fixed quote and timeline. No pressure, no obligation.</p></details>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a website cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the scope — a simple business website starts affordably, while larger projects with custom features cost more. Share your requirements and I'll give you an honest, fixed quote before anything starts. No hidden charges, ever."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a project take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A typical business website takes 1–3 weeks from start to launch. Larger projects with automation or custom development may take longer — I'll give you a clear timeline before we start, and keep you updated at every step."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with international clients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! I'm based in Lahore, Pakistan, and work with clients worldwide over WhatsApp, email, or video calls — whatever suits you. You get quality work at honest rates, in your timezone, with clear communication."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I be able to update the website myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. I build on WordPress so you can easily update text, images, and pages yourself. I also provide a short training walkthrough after launch — most clients are updating their own sites confidently within a day, no technical background needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide support after launch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — every project includes post-launch support. I'm here if anything needs fixing, updating, or improving down the road. Just message me on WhatsApp or email and I'll sort it out quickly — many clients stay in touch for months after launch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer ongoing maintenance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — if you'd rather not touch anything technical, I offer affordable monthly maintenance: updates, backups, security checks, and small content changes handled for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why hire a WordPress developer in Lahore?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You get international-quality websites and automation at honest rates, in your own timezone, with clear communication. No agency overhead — you work directly with the developer building your project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens after I send a message?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I reply within 24 hours — usually much faster on WhatsApp. We'll discuss your goals, I'll ask a few questions about your project, then you'll get a clear fixed quote and timeline. No pressure, no obligation."
+      }
+    }
+  ]
+}
+</script>
 </div>
 </section>
 
@@ -270,6 +349,7 @@ textarea.in{min-height:120px;resize:vertical}
 <li><a href="/projects/">Projects</a></li>
 <li><a href="/skills/">Skills</a></li>
 <li><a href="/contact/">Contact</a></li>
+<li><a href="/privacy-policy/">Privacy Policy</a></li>
 </ul>
 </div>
 <div>

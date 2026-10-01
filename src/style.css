@@ -155,3 +155,10 @@ textarea.in{min-height:120px;resize:vertical}
 .wa-float:hover{transform:scale(1.08)}
 .wa-float svg{width:30px;height:30px;fill:#fff}
 @media(max-width:640px){.wa-float{right:14px;bottom:14px;width:52px;height:52px}.wa-float svg{width:28px;height:28px}}
+/* Proficiency levels (replaces self-assessed % bars) */
+.lvl-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.lvl-row:last-of-type{border-bottom:none}
+.lvl{font-size:.7rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:4px 12px;border-radius:999px;white-space:nowrap}
+.lvl.adv{background:#e2f4e8;color:#12713a}
+.lvl.pro{background:#e7edfb;color:#2b4acb}
+.lvl.int{background:#fdf1dd;color:#96690f}
