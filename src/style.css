@@ -10,6 +10,9 @@ a{text-decoration:none;color:inherit}
 /* header */
 .hdr{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
 .hdr-in{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand a{display:flex;align-items:center;gap:12px}
+.brand-icon{width:42px;height:42px;border-radius:10px;flex:none}
+.brand-txt{display:flex;flex-direction:column}
 .brand b{font-size:1.15rem;letter-spacing:.06em;color:var(--dark)}
 .brand span{display:block;font-size:.72rem;color:var(--mut);letter-spacing:.02em}
 .nav{display:flex;gap:26px;align-items:center}
